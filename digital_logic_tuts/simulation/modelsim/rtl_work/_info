@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/simulation/modelsim
+vlight
+!s110 1498962078
+!i10b 1
+!s100 ;6LzGOWCHC52Ggidi60161
+I]FihF@Tm<0Do`>O_R]kR71
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1498958653
+8C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/light.v
+FC:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/light.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1498962078.000000
+!s107 C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/light.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts|C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/light.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts
+tCvgOpt 0

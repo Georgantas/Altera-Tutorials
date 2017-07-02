@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/simulation/qsim
+vhard_block
+Z1 !s110 1498962428
+!i10b 1
+!s100 ma`o?=iQ2oifCKRJdO5lA1
+I2d0V@_^XamN`8PkfDizmA1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1498962427
+Z4 8light.vo
+Z5 Flight.vo
+L0 126
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1498962428.000000
+Z8 !s107 light.vo|
+Z9 !s90 -work|work|light.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vlight
+R1
+!i10b 1
+!s100 kU0=ng[9;B;]U@zzRb=Yk0
+IC2HUG_o5Z8Wa:0zWUVeP82
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vlight_vlg_vec_tst
+R1
+!i10b 1
+!s100 0:8oCmPce:QMjfn02<3643
+IIHSO_27?9gh`2nFIa9PDc3
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
