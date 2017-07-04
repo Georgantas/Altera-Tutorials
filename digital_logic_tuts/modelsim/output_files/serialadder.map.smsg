@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fsm.v(25): always construct contains both blocking and non-blocking assignments File: C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/modelsim/fsm.v Line: 25

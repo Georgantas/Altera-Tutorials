@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/simulation/simulation/qsim
+vhard_block
+Z1 !s110 1499180896
+!i10b 1
+!s100 Z7Bi:9_LV`9PELOLg]Yl:2
+I;JLJ6358Rb9WXP^^<X8kD0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1499180896
+Z4 8majority3.vo
+Z5 Fmajority3.vo
+L0 140
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1499180896.000000
+Z8 !s107 majority3.vo|
+Z9 !s90 -work|work|majority3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmajority3
+R1
+!i10b 1
+!s100 O6B[RWgnW_94j[F9cK1fL2
+IF_;90NE<m?UNJfh=ka38C3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmajority3_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]9WG^@XW5O8l=nFRDm?C22
+Ic9c;Y41l9jHbje:5k2LP10
+R2
+R0
+w1499180895
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

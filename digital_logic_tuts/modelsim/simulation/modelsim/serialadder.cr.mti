@@ -1,0 +1,9 @@
+C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/modelsim/simulation/modelsim/serialadder.vo {1 {vlog -work serialadder -stats=none C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/modelsim/simulation/modelsim/serialadder.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module serialadder
+-- Compiling module hard_block
+
+Top level modules:
+	serialadder
+
+} {} {}}
