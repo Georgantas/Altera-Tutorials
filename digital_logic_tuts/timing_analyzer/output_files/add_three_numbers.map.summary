@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jul 04 00:30:42 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : add_three_numbers
+Top-level Entity Name : add_three_numbers
+Family : Cyclone IV E
+Total logic elements : 43
+    Total combinational functions : 19
+    Dedicated logic registers : 34
+Total registers : 34
+Total pins : 35
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
