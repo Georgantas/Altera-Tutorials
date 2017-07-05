@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/majority3.v
+source_file = 1, C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/db/majority3.cbx.xml
+design_name = majority3
+instance = comp, \f~output , f~output, majority3, 1
+instance = comp, \x1~input , x1~input, majority3, 1
+instance = comp, \x2~input , x2~input, majority3, 1
+instance = comp, \x3~input , x3~input, majority3, 1
+instance = comp, \f~0 , f~0, majority3, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

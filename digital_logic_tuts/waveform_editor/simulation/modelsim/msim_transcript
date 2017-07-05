@@ -1,0 +1,47 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do majority3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor {C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/majority3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:31:11 on Jul 04,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor" C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/majority3.v 
+# -- Compiling module majority3
+# 
+# Top level modules:
+# 	majority3
+# End time: 21:31:11 on Jul 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.majority3
+# vsim work.majority3 
+# Start time: 21:31:27 on Jul 04,2017
+# Loading work.majority3
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 400ps sim:/majority3/x1
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 400ps -endtime 800ps Edit:/majority3/x1
+wave modify -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 400ps Edit:/majority3/x1
+wave modify -driver freeze -pattern constant -value 1 -starttime 400ps -endtime 800ps Edit:/majority3/x1
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 800ps sim:/majority3/x2
+wave edit invert -start 200ps -end 400ps Edit:/majority3/x2
+wave edit invert -start 600ps -end 800ps Edit:/majority3/x2
+wave create -driver freeze -pattern clock -initialvalue {Not Logged} -period 200ps -dutycycle 50 -starttime 0ps -endtime 800ps sim:/majority3/x3
+add wave -position insertpoint  \
+sim:/majority3/f
+add wave  \
+sim:/majority3/f
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/simulation/modelsim/wave.do
+wave editwrite -file C:/Users/Georgantas/Documents/Altera-Tutorials/digital_logic_tuts/waveform_editor/simulation/modelsim/wave.do -append
+run -all
+restart
+run -all
+# End time: 21:43:23 on Jul 04,2017, Elapsed time: 0:11:56
+# Errors: 0, Warnings: 0
