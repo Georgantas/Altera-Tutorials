@@ -1,0 +1,384 @@
+|reaction_tester
+CLOCK_50 => CLOCK_50.IN5
+KEY[0] => clear.IN0
+KEY[1] => request_test.IN2
+KEY[2] => clear.IN1
+HEX0[6] <= bcd7seg:digit0.port1
+HEX0[5] <= bcd7seg:digit0.port1
+HEX0[4] <= bcd7seg:digit0.port1
+HEX0[3] <= bcd7seg:digit0.port1
+HEX0[2] <= bcd7seg:digit0.port1
+HEX0[1] <= bcd7seg:digit0.port1
+HEX0[0] <= bcd7seg:digit0.port1
+HEX1[6] <= bcd7seg:digit1.port1
+HEX1[5] <= bcd7seg:digit1.port1
+HEX1[4] <= bcd7seg:digit1.port1
+HEX1[3] <= bcd7seg:digit1.port1
+HEX1[2] <= bcd7seg:digit1.port1
+HEX1[1] <= bcd7seg:digit1.port1
+HEX1[0] <= bcd7seg:digit1.port1
+HEX2[6] <= bcd7seg:digit2.port1
+HEX2[5] <= bcd7seg:digit2.port1
+HEX2[4] <= bcd7seg:digit2.port1
+HEX2[3] <= bcd7seg:digit2.port1
+HEX2[2] <= bcd7seg:digit2.port1
+HEX2[1] <= bcd7seg:digit2.port1
+HEX2[0] <= bcd7seg:digit2.port1
+HEX3[6] <= bcd7seg:digit3.port1
+HEX3[5] <= bcd7seg:digit3.port1
+HEX3[4] <= bcd7seg:digit3.port1
+HEX3[3] <= bcd7seg:digit3.port1
+HEX3[2] <= bcd7seg:digit3.port1
+HEX3[1] <= bcd7seg:digit3.port1
+HEX3[0] <= bcd7seg:digit3.port1
+LEDG[0] <= control_ff:test_signal.port3
+
+
+|reaction_tester|control_ff:run_signal
+Clock => Q~reg0.CLK
+ff_in => Q.IN1
+Clear => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|control_ff:test_signal
+Clock => Q~reg0.CLK
+ff_in => Q.IN1
+Clear => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|hundredth:hundredth_sec
+Clock => count_500k[0].CLK
+Clock => count_500k[1].CLK
+Clock => count_500k[2].CLK
+Clock => count_500k[3].CLK
+Clock => count_500k[4].CLK
+Clock => count_500k[5].CLK
+Clock => count_500k[6].CLK
+Clock => count_500k[7].CLK
+Clock => count_500k[8].CLK
+Clock => count_500k[9].CLK
+Clock => count_500k[10].CLK
+Clock => count_500k[11].CLK
+Clock => count_500k[12].CLK
+Clock => count_500k[13].CLK
+Clock => count_500k[14].CLK
+Clock => count_500k[15].CLK
+Clock => count_500k[16].CLK
+Clock => count_500k[17].CLK
+Clock => count_500k[18].CLK
+Clock => count_500k[19].CLK
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+Load => count_500k.OUTPUTSELECT
+pulse_500k <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|delay_counter:foursec_delay
+Clock => delay_count[0].CLK
+Clock => delay_count[1].CLK
+Clock => delay_count[2].CLK
+Clock => delay_count[3].CLK
+Clock => delay_count[4].CLK
+Clock => delay_count[5].CLK
+Clock => delay_count[6].CLK
+Clock => delay_count[7].CLK
+Clock => delay_count[8].CLK
+Clock => delay_count[9].CLK
+Clock => delay_count[10].CLK
+Clock => delay_count[11].CLK
+Clock => delay_count[12].CLK
+Clock => delay_count[13].CLK
+Clock => delay_count[14].CLK
+Clock => delay_count[15].CLK
+Clock => delay_count[16].CLK
+Clock => delay_count[17].CLK
+Clock => delay_count[18].CLK
+Clock => delay_count[19].CLK
+Clock => delay_count[20].CLK
+Clock => delay_count[21].CLK
+Clock => delay_count[22].CLK
+Clock => delay_count[23].CLK
+Clock => delay_count[24].CLK
+Clock => delay_count[25].CLK
+Clock => delay_count[26].CLK
+Clock => delay_count[27].CLK
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Clear => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Enable => delay_count.OUTPUTSELECT
+Start <= delay_count[27].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|BCD_counter:bcdcount
+Clock => Clock.IN4
+Clear => Clear.IN4
+Enable => Enable.IN1
+BCD3[0] <= BCD_stage:stage3.port3
+BCD3[1] <= BCD_stage:stage3.port3
+BCD3[2] <= BCD_stage:stage3.port3
+BCD3[3] <= BCD_stage:stage3.port3
+BCD2[0] <= BCD_stage:stage2.port3
+BCD2[1] <= BCD_stage:stage2.port3
+BCD2[2] <= BCD_stage:stage2.port3
+BCD2[3] <= BCD_stage:stage2.port3
+BCD1[0] <= BCD_stage:stage1.port3
+BCD1[1] <= BCD_stage:stage1.port3
+BCD1[2] <= BCD_stage:stage1.port3
+BCD1[3] <= BCD_stage:stage1.port3
+BCD0[0] <= BCD_stage:stage0.port3
+BCD0[1] <= BCD_stage:stage0.port3
+BCD0[2] <= BCD_stage:stage0.port3
+BCD0[3] <= BCD_stage:stage0.port3
+
+
+|reaction_tester|BCD_counter:bcdcount|BCD_stage:stage0
+Clock => BCDq[0]~reg0.CLK
+Clock => BCDq[1]~reg0.CLK
+Clock => BCDq[2]~reg0.CLK
+Clock => BCDq[3]~reg0.CLK
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+BCDq[0] <= BCDq[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[1] <= BCDq[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[2] <= BCDq[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[3] <= BCDq[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Value9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|BCD_counter:bcdcount|BCD_stage:stage1
+Clock => BCDq[0]~reg0.CLK
+Clock => BCDq[1]~reg0.CLK
+Clock => BCDq[2]~reg0.CLK
+Clock => BCDq[3]~reg0.CLK
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+BCDq[0] <= BCDq[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[1] <= BCDq[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[2] <= BCDq[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[3] <= BCDq[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Value9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|BCD_counter:bcdcount|BCD_stage:stage2
+Clock => BCDq[0]~reg0.CLK
+Clock => BCDq[1]~reg0.CLK
+Clock => BCDq[2]~reg0.CLK
+Clock => BCDq[3]~reg0.CLK
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+BCDq[0] <= BCDq[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[1] <= BCDq[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[2] <= BCDq[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[3] <= BCDq[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Value9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|BCD_counter:bcdcount|BCD_stage:stage3
+Clock => BCDq[0]~reg0.CLK
+Clock => BCDq[1]~reg0.CLK
+Clock => BCDq[2]~reg0.CLK
+Clock => BCDq[3]~reg0.CLK
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Clear => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+Ecount => BCDq.OUTPUTSELECT
+BCDq[0] <= BCDq[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[1] <= BCDq[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[2] <= BCDq[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCDq[3] <= BCDq[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Value9 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|bcd7seg:digit3
+bcd[0] => Mux0.IN19
+bcd[0] => Decoder0.IN2
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Decoder0.IN1
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Decoder0.IN0
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+display[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|bcd7seg:digit2
+bcd[0] => Mux0.IN19
+bcd[0] => Decoder0.IN2
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Decoder0.IN1
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Decoder0.IN0
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+display[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|bcd7seg:digit1
+bcd[0] => Mux0.IN19
+bcd[0] => Decoder0.IN2
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Decoder0.IN1
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Decoder0.IN0
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+display[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reaction_tester|bcd7seg:digit0
+bcd[0] => Mux0.IN19
+bcd[0] => Decoder0.IN2
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Decoder0.IN1
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Decoder0.IN0
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+display[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

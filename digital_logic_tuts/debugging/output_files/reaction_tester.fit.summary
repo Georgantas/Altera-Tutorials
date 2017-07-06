@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jul 06 11:17:35 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : reaction_tester
+Top-level Entity Name : reaction_tester
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 133 / 6,272 ( 2 % )
+    Total combinational functions : 132 / 6,272 ( 2 % )
+    Dedicated logic registers : 66 / 6,272 ( 1 % )
+Total registers : 66
+Total pins : 33 / 92 ( 36 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
